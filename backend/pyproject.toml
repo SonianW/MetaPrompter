@@ -1,0 +1,31 @@
+[project]
+name = "metaprompter-backend"
+version = "0.1.0"
+description = "MetaPrompter 后端项目"
+authors = [{name = "sonianwang"}]
+readme = "README.md"
+dependencies = [
+    "django>=5.2.6",
+    "django-rest-framework>=0.1.0",
+    "langchain>=0.3.27",
+    "langchain-openai>=0.3.32",
+    "openai>=1.107.0",
+    "python-dotenv>=1.1.1",
+    "loguru>=0.7.0",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.2.6"
+django-rest-framework = "^3.15.2"
+python-dotenv = "^1.0.1"
+langchain = "^0.2.16"
+openai = "^1.40.6"
+loguru = "^0.7.0"
+
+[tool.setuptools]
+packages = ["metaprompter", "prompt", "llm"]
+
+[build-system]
+requires = ["setuptools>=61.0", "poetry-core>=1.0.0"]
+build-backend = "setuptools.build_meta"
